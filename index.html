@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+    <style>
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+
+        }
+
+        .intro {
+            text-align: center;
+        }
+        .about-grid {
+            display: -moz-grid-group;
+            flex-flow: column;
+            text-align: center;
+            padding: 12px 10px;
+            background-origin: padding-box;
+        }
+        
+        .google {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 10px;
+            background-color: aquamarine;
+            justify-content: flex-end;    
+        }
+
+        .abt {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 10px;
+            background-color: rgb(23, 204, 276);
+        }
+
+        .abt-section {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 10px;
+            background-color: rgb(29, 106, 102);
+        }
+
+        .form {
+            width: 150px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: left;
+            padding: 70px 150px;
+            margin-bottom: 50px;
+            margin-left: 500px;
+            margin-top: 30px;
+            background-color: rgb(100, 50, 90);
+        }
+
+        label {
+            color: aliceblue;
+            margin-top: 5px;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 8px;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        .table {
+            margin-left: 500px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <img src="images/Rotimi 2.jpg" alt="profile_image"/> 
+            <h1 style="text-align: center;">Rotimi Olanrewaju Clement</h1>
+            <p>I am Rotimi a season Backend developer currently at techyjaunt study frontend development to become full stack developer.</p>
+        </div>
+        <div class="google">
+            <a href="https://google.com" target="_blank">search your Google here</a><br><br>
+        </div>
+        <div class="abt">
+            <a href="/about.html">About Me Page</a> <br><br>
+        </div>
+        <div class="abt-section">
+            <a href="#about">About me</a>
+        </div>    
+        
+    </div><br><br><br><br><br><br><br><br>
+    <div id="about" class="about-grid">
+        <h3>ABOUT ME</h3>
+
+        <p>I am Rotimi a season Backend developer currently at techyjaunt study frontend development to become full stack developer.</p>
+        <p>I am a father of three living in a very remote area of Alagbado.</p>
+        <p>I am Rotimi a season Backend developer currently at techyjaunt study frontend development to become full stack developer.</p>
+        <p>I am Rotimi a season Backend developer currently at techyjaunt study frontend development to become full stack developer.</p>
+        <p>I am a father of three living in a very remote area of Alagbado.</p>
+        <p>I am Rotimi a season Backend developer currently at techyjaunt study frontend development to become full stack developer.</p>
+    </div>
+    <div class="form">
+        <form action="" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="your full name" required="true" id="name">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" required="true" id="email">
+            <label for="mgs">Message</label>
+            <input type="textarea" placeholder="Write your message" id="mgs">
+            <button class="button">Submit</button>
+        </form>
+    </div>
+    <div class="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Movie/Hobby</th>
+                    <th id="short">Short Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        The Beautiful Mind
+                    </td>
+                    <td>
+                        A story of man who almost run mad but save by love.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Igba Oro
+                    </td>
+                    <td>
+                        A Yoruba movie that show the end of a wicked man.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        The gods must be cracy
+                    </td>
+                    <td>
+                        A story shows how the back man grow to civilization.
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</body>
+</html>
